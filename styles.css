@@ -1,0 +1,55 @@
+*{
+   margin: 0 auto; 
+   background-color: thistle;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+}
+
+.f_box{
+    display: flex;
+    flex-direction: row;
+}
+
+.f2{
+    display: flex;
+    width: 25px;
+    height: 25px;
+    justify-content: center;
+}
+
+.box1{
+    background-color: aliceblue;
+    grid-area: uno;
+}
+
+.box2{
+    background-color: rgb(36, 173, 72);
+    grid-area: dos;
+}
+
+.box3{
+    background-color: rgb(85, 49, 185);
+    grid-area: tres;
+}
+
+.grid{
+    width: 90%;
+    height: 30rem;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(4,49%);
+    grid-template-areas: "uno dos"
+                         "uno dos"
+                         "uno tres"
+                         "uno tres";
+}
+
+/* @media screen and (min-width: 600px) {
+    * {
+      background-color: olive;
+    }
+
+  } */
